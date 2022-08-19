@@ -2,6 +2,7 @@
 <html lang="en">
 
   <head>
+    <link rel="stylesheet" href="./assets/style.css">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,23 +21,39 @@
         <h2>HTML</h2>
         <!--How can I attach a hyperlink to an HTML Reference page (w3schools/tags/default.asp) -->
         <ul>
-          <li>Acronym: HyperText Markup Language</li>
-          <li>File extension(s): .html or .htm</li>
+          <li> Acronym: HyperText Markup Language</li>
+          <li> File extension(s): .html or .htm</li>
           <li> HTML gives the content structure.</li>
-          <li>There are 4 types of structural and data elements: Text, Image, Header and List</li>
-          <li>The head element contains information about the webpage.</li>
-          <li>The body element represents the visible content shown to the user.</li>
-          <li>There are 3 types of content elements: Meta-related, Content division, and Semantic.</li>
-          <li>The meta-related elements defines metadata such as the character set, description, keywords, author, and viewport.</li>
+          <li> There are 4 types of structural and data elements: Text, Image, Header and List</li>
+          <li> The head element contains information about the webpage.</li>
+          <li> The body element represents the visible content shown to the user.</li>
+          <li> There are 3 types of content elements: Meta-related, Content division, and Semantic.</li>
+          <li> The meta-related elements defines metadata such as the character set, description, keywords, author, and viewport.</li>
         </ul>
       </section>
 
       <section class="card" id="css-section">
         <h2>CSS</h2>
         <ul>
-          <li>Acronym: Cascading Style Sheets</li>
-          <li>File extension(s): .css</li>
+          <li> Acronym: Cascading Style Sheets</li>
+          <li> File extension(s): .css</li>
           <li> CSS gives the content style.</li>
+          <li> CSS can be inline. The style will only apply to that gives the content style.</li>
+          <li> CSS creates and formats the style rules for specific elements and style options</li>
+          <li> ---  by defining the colors, aesthetics, visual layout, and organization of the webpage.</li>
+          <li> CSS can be used internal to the HTML or using an external style sheet.</li>
+          <li> Inline CSS is and internal use of CSS and can override an external CSS and only applies to that tag.</li>
+          <li> An internal style sheet uses CSS rule; is contained in the head section; and applies only to that webpage.</li>
+          <li> ---  Also this type of style sheet will override an external CSS.</li>
+          <li> An external CSS can set the tone for all the webpages on the website. Changes can be made in one location.</li>
+          <li> Use tag <link rel="stylesheet" href="file-path/file-name.css" /> in the head section.</li>
+          <li> CSS rule has a selector and a {declaration block}.</li>
+          <li> Each declaration block has a property and a vlaue {prop1:val1; prop2:val2;}</li>
+          <li> A selector of * is a wildcard and applies to ALL elements.</li>
+          <li> Think about the CSS box model...Margin/Border/Padding/Content</li>
+          <li> A margin indicates how much space we want around the outside of an element.</li>
+          <li> A padding indicates how much space we want around the content inside an element.</li>
+          <li> side note: DRY => Do not Repeat Yourself - coding principle (like modular coding?)</li>
         </ul>
       </section>
 
@@ -45,24 +62,29 @@
         <!--How can I attach a file to a Git cheat sheet (stored my computer E:/GTBootcCamp202208) -->
         <!-- This is a files downloaded from GitHub education (I think) so may be able to point to GITHUB-->
         <ul>
-          <li>"Git is a version control system that lets you manage and keep track of each version of your project."</li>
+          <li> "Git is a version control system that lets you manage and keep track of each version of your project."</li>
           <li> GitHub is a cloud-based hosting service that allows us to keep track of our projects inside repositories. </li>
-          <li>command: git status => shows files in working directory</li>
-          <li>command: git add -A => adds or includes files to branch currently attached</li>
-          <li>command: git commit -m "text" => creates versions that need to be merged with message ??</li>
-          <li>command: git pull origin branch-name => recieve and merge any commits from the tracking remote branch</li>
-          <li>command: git push origin branch-name => sends local branch commits to remote repository branch</li>
-          <li>command: git checkout -b branch-name => creates a new branch and switches to new branch</li>
-          <li>command: git checkout branch-name => switches to that branch</li>                    
-          <li>side note: command: code . => starts the Visual Studio (VS) Code editor</li>
+          <li> --- To create new feature branch </li>
+          <li> command: git status => shows files in working directory</li>
+          <li> command: git checkout branch-name => switches to that branch</li>
+          <li> command: git checkout -b branch-name => -b attribute creates a new branch and switches to new branch</li>
+          <li> --- To merge feature branch into main branch </li>
+          <li> command: git status => shows files in working directory</li>
+          <li> command: git add -A => adds or includes files to branch currently attached</li>
+          <li> command: git commit -m "text" => creates versions that need to be merged with message ??</li>
+          <li> command: git pull origin main => recieve and merge any commits from the tracking remote branch</li>
+          <li> command: git push origin branch-name => sends local branch commits to remote repository branch</li>
+          <li> command: git checkout main => creates a new branch and switches to new branch</li>
+          <li> command: git pull origin main => switches to that branch</li>
+          <li> side note: command: code . => starts the Visual Studio (VS) Code editor</li>
         </ul>
       </section>
 
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
         <ul>
-          <li>Abbreviation: JS</li>
-          <li>File extension(s): .js, .cjs, .mjs</li>
+          <li> Abbreviation: JS</li>
+          <li> File extension(s): .js, .cjs, .mjs</li>
           <li> JS handles logic and allows the user to interact with a website.</li>
         </ul>
       </section>   
