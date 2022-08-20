@@ -2,7 +2,10 @@
 <html lang="en">
 
   <head>
+    
+    <!--This adds the CSS style sheet to HTML -->
     <link rel="stylesheet" href="./assets/style.css">
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,6 +17,8 @@
     <header id="top">
       <h1>Prework Study Guide</h1>
       <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
+      <!-- This is a reminder to open the console -->
+      <h2>✨ Open the Console to See What's Happening ✨</h2>
     </header>
 
     <main>
@@ -46,7 +51,7 @@
           <li> An internal style sheet uses CSS rule; is contained in the head section; and applies only to that webpage.</li>
           <li> ---  Also this type of style sheet will override an external CSS.</li>
           <li> An external CSS can set the tone for all the webpages on the website. Changes can be made in one location.</li>
-          <li> Use tag <link rel="stylesheet" href="file-path/file-name.css" /> in the head section.</li>
+          <li> Use link tag in the head section.</li>
           <li> CSS rule has a selector and a {declaration block}.</li>
           <li> Each declaration block has a property and a vlaue {prop1:val1; prop2:val2;}</li>
           <li> A selector of * is a wildcard and applies to ALL elements.</li>
@@ -64,18 +69,34 @@
         <ul>
           <li> "Git is a version control system that lets you manage and keep track of each version of your project."</li>
           <li> GitHub is a cloud-based hosting service that allows us to keep track of our projects inside repositories. </li>
-          <li> --- To create new feature branch </li>
-          <li> command: git status => shows files in working directory</li>
-          <li> command: git checkout branch-name => switches to that branch</li>
+          <li> Each project/directory has 3 states:</li>
+          <li> ---The .git directory is where Git stores the metadata and object database for repo.</li>
+          <li> ---The working directory contains a copy of one version of the git project.</li>
+          <li> ---The staging area/index file that stores info about what will be committed into the git repo</li>
+          <li> --- To create and switch to new feature branch </li>
+          <li> command: git status => shows current branch in repository</li>
+          <li> command: git checkout main => switches to main branch</li>
           <li> command: git checkout -b branch-name => -b attribute creates a new branch and switches to new branch</li>
-          <li> --- To merge feature branch into main branch </li>
-          <li> command: git status => shows files in working directory</li>
-          <li> command: git add -A => adds or includes files to branch currently attached</li>
+          <li> --- To merge feature branch into main branch Finish Git Flow</li>
+          <li> command: git status => shows current branch in repository</li>
+          <li> command: git checkout branch-name => switches to feature branch</li>
+          <li> command: git status => verify current branch</li>
+          <li> command: git add -A => adds or includes files to current branch (-A adds all changes)</li>
           <li> command: git commit -m "text" => creates versions that need to be merged with message ??</li>
-          <li> command: git pull origin branch-name => recieve and merge any commits from the tracking remote branch</li>
-          <li> command: git push origin branch-name => sends local branch commits to remote repository branch</li>
-          <li> command: git checkout -b branch-name => creates a new branch and switches to new branch</li>
-          <li> command: git checkout branch-name => switches to that branch</li>
+          <li> command: git pull origin main => update to main branch before opening PR</li>
+          <li> command: git push origin branch-name => send local changes to feature branch</li>
+          <li> --------go to GitHub to compare/pull request</li>
+          <li> -----------resolve issue</li>
+          <li> --- Update local repo with update/merged feature</li>
+          <li> command: git checkout main => switches to main branch</li>
+          <li> command: git status => verify current branch</li>
+          <li> command: git pull origin main => update to main branch</li>
+          <li> --------go to GitHub to compare/pull request</li>
+          <li> -----------resolve issue</li>
+          <li> --- config: To setup/update personal info associated with the GitHub </li>
+          <li> --- --- include --global attribute to affect all repos, omit it to affect only single current working repo</li>
+          <li> command: git config --global user.name "your name" => changes name </li>
+          <li> command: git config --global user.email "email@example.com" => changes commit email address</li>
           <li> side note: command: code . => starts the Visual Studio (VS) Code editor</li>
         </ul>
       </section>
@@ -85,7 +106,16 @@
         <ul>
           <li> Abbreviation: JS</li>
           <li> File extension(s): .js, .cjs, .mjs</li>
-          <li> JS handles logic and allows the user to interact with a website.</li>
+          <li> JavaScript is a high-level programmin language.</li>
+          <li> Open browser console by right-clicking on the browser window and clicking Inspect.</li>
+          <li> ----- Then change to the Console tab.</li>
+          <li> I learned 2 new words: truthy and falsy.</li>
+          <li> -- truthy means is a boolean value of true.</li>
+          <li> -- falsy means 0, -0, on, "", null, undefined, NaN, or boolean value of false.</li>
+          <li> A JS array index starts at 0, so number of items in array is index +1</li>
+          <li> A function is predefined set of tasks. Functions can be user-defined or JS prepared functions.</li>
+          <li> A variable is a named container that allows us to store data in our code.</li>
+          <li> Control flow is the order in which a computer executes code in a script.</li>
         </ul>
       </section>   
     </main>
@@ -93,5 +123,9 @@
     <footer>
       <p>I can code!</p>
     </footer>
+
+    <!--This adds the JavaScript file to HTML -->
+    <script src="./assets/script.js"></script>
+
   </body>
 </html>
